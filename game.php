@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="game.css" rel="stylesheet">
-        <title>The game</title>
+        <title>Game</title>
     </head>
     <body>
         <h1>Welcome to Idraulico</h1>

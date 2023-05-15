@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <link href = "home.css" rel="stylesheet">
-        <title>Pour l'instant c'est des trains</title>
+        <title>Home</title>
     </head>
 
     <body>
@@ -12,10 +12,15 @@
         </header>
 
         <main>
-            <h1>Welcome to our game ! This is currently in heavy development, so there's nothing you can do right now.</h1>
-            <h2>But soon, you'll be able to work your brains out while figuring out train traffic.</h2>
-
-            <a href="game.php">You can access the game here (but it's empty, so there's no use going as of now)</a>
+            <h1>Welcome ! Please sign in to continue</h1>
+            <form method="post" action="">
+                <label>Name :</label>
+                <input type="text" name="name" required>
+                <br><br>
+                <label>Password :</label>
+                <input type="password" name="passwd" required>
+            </form>
+            <a href="form.php">No account ? Create one here</a>
         </main>
         
         <footer>
