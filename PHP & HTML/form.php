@@ -14,7 +14,7 @@
             <input type="password" name="passwd" required>
             <br><br>
             <label>Confirm your password</label>
-            <input type="password" name="verfipass" required>
+            <input type="password" name="verifpass" required>
             <br><br>
             <input type="submit" name="create" value="Create your account">
         </form>
