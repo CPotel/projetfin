@@ -19,6 +19,8 @@
                 <br><br>
                 <label>Password :</label>
                 <input type="password" name="passwd" required>
+                <br><br>
+                <input type="submit" name="submit" value="Log in">
             </form>
             <a href="form.php">No account ? Create one here</a>
         </main>

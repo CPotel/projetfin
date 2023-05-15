@@ -14,6 +14,8 @@
             <br><br>
             <label>Confirm your password</label>
             <input type="password" name="verfipass" required>
+            <br><br>
+            <input type="submit" name="create" value="Create your account">
         </form>
     </body>
 </html>
