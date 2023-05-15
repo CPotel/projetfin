@@ -13,7 +13,7 @@
 
         <main>
             <h1>Welcome ! Please sign in to continue</h1>
-            <form method="post" action="">
+            <form method="post" action="login.php">
                 <label>Name :</label>
                 <input type="text" name="name" required>
                 <br><br>

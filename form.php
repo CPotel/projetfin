@@ -5,7 +5,8 @@
         <title>Create account</title>
     </head>
     <body>
-        <form method="post" action="">
+        <h1>Create an account to continue.</h1>
+        <form method="post" action="create.php">
             <label>Name :</label>
             <input type="text" name="name" required maxlength="30">
             <br><br>
