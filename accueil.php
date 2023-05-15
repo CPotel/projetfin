@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <link href = "home.css" rel="stylesheet">
         <title>Pour l'instant c'est des trains</title>
     </head>
 
