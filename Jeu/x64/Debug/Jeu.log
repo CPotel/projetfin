@@ -1,0 +1,4 @@
+﻿  test.c
+C:\MAMP\htdocs\projetfin\Jeu\test.c(7,2): warning C4098: 'main' : fonction 'void' retournant une valeur
+  LINK : C:\MAMP\htdocs\projetfin\Jeu\x64\Debug\Jeu.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+  Jeu.vcxproj -> C:\MAMP\htdocs\projetfin\Jeu\x64\Debug\Jeu.exe
