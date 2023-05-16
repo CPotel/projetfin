@@ -1,4 +1,0 @@
-C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\x64\Debug\test projet fin.vcxproj.CopyComplete
-C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\x64\Debug\test projet fin.exe
-C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\x64\Debug\gtest.pdb
-C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\x64\Debug\gtest_main.pdb
