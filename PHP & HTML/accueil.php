@@ -13,7 +13,15 @@
 
     <body>
         <header>
-            <h1> Welcome to *titre du jeu* </h1>
+        <nav>
+            <ul>
+                <li><a class="accueil" href="index.php">HOME</a></li>
+                <li><a class="score" href="score.php">SCORE</a></li>
+                <li><a class="theme" href="theme.php">THEME</a> </li>
+                <li><a class="login" href="login.html">MY ACCOUNT</a></li>
+                <li><a class="who" href="who.html">ABOUT US</a></li>
+            </ul>
+        </nav>  
         </header>
 
         <main>
@@ -21,13 +29,13 @@
                 <?php
                 if (isset($_SESSION["login"])){
                     ?>
-                <a href="logout.php" class="Bouton1" class="logout">Log out here</a>
+                <a href="logout.php" class="logout">Log out here</a>
                 <?php
                 }
                 else{
                     ?>
                 <h1></h1>
-                <a href="login_form.php" class="Bouton1" class="Login">Login</a>
+                <a href="login_form.php" class="Login">Login</a>
                 <br><br>
                 <?php
                 }
