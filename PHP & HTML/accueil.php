@@ -29,13 +29,13 @@
                 <?php
                 if (isset($_SESSION["login"])){
                     ?>
-                <a href="logout.php" class="Bouton1" class="logout">Log out here</a>
+                <a href="logout.php"  >Log out here</a>
                 <?php
                 }
                 else{
                     ?>
                 <h1></h1>
-                <a href="login_form.php" class="Login">Login</a>
+                <a href="login_form.php" class="Bouton1">Login</a>
                 <br><br>
                 <?php
                 }
