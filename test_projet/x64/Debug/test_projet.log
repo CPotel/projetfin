@@ -1,0 +1,68 @@
+﻿  game.c
+  resolution.c
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\resolution.c(4,1): warning C4029: la déclaration de la liste de paramètres formels est différente de la définition
+  Génération de code en cours...
+  test.cpp
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(6,6): error C2079: 'myPipe' utilise une struct de 'Pipe' non défini
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,1): error C3927: '->' : l'utilisation d'un type de retour de fin n'est pas autorisée après un déclarateur qui n'est pas un déclarateur de fonction
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,7): error C3484: erreur de syntaxe : '->' attendu avant le type de retour
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,8): error C3613: type de retour manquant après '->' ('int' pris par défaut)
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,1): error C2086: 'int myPipe' : redéfinition
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(6,6): message : voir la déclaration de 'myPipe'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(8,8): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'direction'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,1): error C3927: '->' : l'utilisation d'un type de retour de fin n'est pas autorisée après un déclarateur qui n'est pas un déclarateur de fonction
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,7): error C3484: erreur de syntaxe : '->' attendu avant le type de retour
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,8): error C3613: type de retour manquant après '->' ('int' pris par défaut)
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,1): error C2086: 'int myPipe' : redéfinition
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(6,6): message : voir la déclaration de 'myPipe'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(9,8): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'direction'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,1): error C3927: '->' : l'utilisation d'un type de retour de fin n'est pas autorisée après un déclarateur qui n'est pas un déclarateur de fonction
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,7): error C3484: erreur de syntaxe : '->' attendu avant le type de retour
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,8): error C3613: type de retour manquant après '->' ('int' pris par défaut)
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,1): error C2086: 'int myPipe' : redéfinition
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(6,6): message : voir la déclaration de 'myPipe'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(10,8): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'direction'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,1): error C3927: '->' : l'utilisation d'un type de retour de fin n'est pas autorisée après un déclarateur qui n'est pas un déclarateur de fonction
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,7): error C3484: erreur de syntaxe : '->' attendu avant le type de retour
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,8): error C3613: type de retour manquant après '->' ('int' pris par défaut)
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,1): error C2086: 'int myPipe' : redéfinition
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(6,6): message : voir la déclaration de 'myPipe'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(11,8): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'direction'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(13,5): error C2059: erreur de syntaxe : '.'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(14,5): error C2059: erreur de syntaxe : '.'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(15,7): error C2275: « pipe » : expression attendue au lieu d’un type
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(15,11): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(15,1): error C2365: 'turn' : redéfinition ; la précédente définition était 'fonction'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\plomber.h(51,6): message : voir la déclaration de 'turn'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(18,2): error C2275: « pipe » : expression attendue au lieu d’un type
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(18,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(18,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(18,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [18], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(18,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(19,2): error C2275: « pipe » : expression attendue au lieu d’un type
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(19,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(19,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(19,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [18], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(19,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(20,2): error C2275: « pipe » : expression attendue au lieu d’un type
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(20,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(20,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(20,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [18], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(20,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(21,2): error C2275: « pipe » : expression attendue au lieu d’un type
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(21,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(21,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(21,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [18], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test_projet\test.cpp(21,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé

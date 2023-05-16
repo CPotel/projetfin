@@ -1,4 +1,15 @@
-﻿  test.c
-C:\MAMP\htdocs\projetfin\Jeu\test.c(7,2): warning C4098: 'main' : fonction 'void' retournant une valeur
-  LINK : C:\MAMP\htdocs\projetfin\Jeu\x64\Debug\Jeu.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
-  Jeu.vcxproj -> C:\MAMP\htdocs\projetfin\Jeu\x64\Debug\Jeu.exe
+﻿  main.c
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(31,19): warning C4133: '=' : types incompatibles - de 'Pipe *' à 'Pipe *'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(32,15): error C2037: la partie gauche de 'x' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(33,15): error C2037: la partie gauche de 'y' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(59,20): error C2037: la partie gauche de 'x' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(59,62): error C2037: la partie gauche de 'y' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(60,16): error C2037: la partie gauche de 'start' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(61,16): error C2037: la partie gauche de 'end' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(63,20): error C2037: la partie gauche de 'x' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(63,56): error C2037: la partie gauche de 'y' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(64,16): error C2037: la partie gauche de 'start' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(65,16): error C2037: la partie gauche de 'end' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(68,16): error C2037: la partie gauche de 'start' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(69,16): error C2037: la partie gauche de 'end' indique un struct/union non défini 'Pipe'
+C:\Users\Admin\Documents\GitHub\projetfin\Jeu\main.c(180,8): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
