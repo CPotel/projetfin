@@ -13,30 +13,33 @@
 
     <body>
         <header>
+            <h1> Welcome to *titre du jeu* </h1>
         </header>
 
         <main>
-            <?php
-            if($_SESSION["login"]==true){
+            <div class="boite">
+                <?php
+                if (isset($_SESSION["login"])){
+                    ?>
+                <a href="logout.php" class="Bouton1" class="logout">Log out here</a>
+                <?php
+                }
+                else{
+                    ?>
+                <h1></h1>
+                <a href="login_form.php" class="Bouton1" class="Login">Login</a>
+                <br><br>
+                <?php
+                }
                 ?>
-            <a href="logout.php" class="Bouton1">Log out here</a>
-            <?php
-            }
-            else{
-                ?>
-            <h1>blablbla</h1>
-            <a href="login_form.php" class="Bouton1">Login</a>
-            <br><br>
-            <?php
-            }
-            ?>
-            <a href="form.php" class="Bouton1">No account? Sign in </a>
-            <a href="game.php" class="Bouton1">Play as a guest (no data will be saved)</a>
+                <a href="form.php" class="Bouton1">No account? Sign in </a>
+                <a href="game.php" class="Bouton1">Play as a guest (no data will be saved)</a>
+            <div>
         </main>
         
-       
-    </body> 
-    <footer>
+        <footer>
             <div>Project by : Yesi DUDON, Esteban HALLIEZ, Anthony LEJEUNE, Sasha LE-ROUX ZIELINSKI, Robin MATARESE, Cyriaque POTEL (CIR 1)</div>
         </footer>
+    </body> 
+    
 </html>
