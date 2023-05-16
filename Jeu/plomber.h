@@ -27,13 +27,13 @@ typedef struct pipe {
 typedef struct game {
     int size; //Taille de la grille de niveau
 #ifdef easy
-    struct Pipe* tab[8][8];
+    struct pipe* tab[8][8];
 #endif
 #ifdef intermediate
-    struct Pipe* tab[15][15];
+    struct pipe* tab[15][15];
 #endif
 #ifdef hard
-    struct Pipe* tab[20][20];
+    struct pipe* tab[20][20];
 #endif
     Pipe* beginning;
     Pipe* end;
