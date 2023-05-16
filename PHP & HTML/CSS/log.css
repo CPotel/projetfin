@@ -14,7 +14,7 @@ body {
       "accueil"
       "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 30px 100vh 100px;
+    grid-template-rows: 30px 100vh 250px;
  }
 
 
@@ -61,6 +61,71 @@ footer {
   border-top:2px solid white;
   background-color: #4C1E4F;
   grid-area: footer;
+  color: white;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0.5px;
+  border-style: solid;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer div h2 {
+  margin-top:30px;
+  position: relative;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 5%;
+}
+
+footer img {
+  margin-left: 18px;
+}
+
+footer a,
+footer .contacter p {
+  color: #f7f2f3;
+  text-decoration: None;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.reseaux ul,
+.contacter ul,
+.legal ul {
+  list-style-type: none;
+}
+
+#logo2,
+#logo3,
+#logo4 {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+}
+
+.insta:hover,
+.youtube:hover,
+.twitter:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer div h2 {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+footer a,
+footer .contacter p {
+  font-size: 12px;
+  line-height: 40px;
 }
 
 #logo {
@@ -74,22 +139,8 @@ footer {
   width: 50px;
 }
 
-header {
-  position: sticky;
-  display: inline;
-  height: 100%;
-  width: calc(100% - 30px);
-  top: 0;
-  z-index: 1000;
-  opacity: 0.8;
-  grid-area: header;
-  background-color: rgba(76, 30, 79, 0.9);
-  padding: 15px;
-  opacity: 1;
-  border-bottom: 2px solid white;
-}
 
-nav{
+header nav{
   position: relative;
   display: inline;
   bottom: -5px;
@@ -112,13 +163,13 @@ nav{
   font-size: 13px;
   }
 
-ul {
+header ul {
   display: inline;
   list-style-type: none;
   margin: auto;
 }
 
-ul li {
+header ul li {
   display: inline;
   padding-left: 5%;
 }
@@ -157,3 +208,4 @@ ul li {
 .link{
   color:red;
 }
+B
