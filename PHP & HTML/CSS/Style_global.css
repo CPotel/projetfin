@@ -11,7 +11,7 @@
 .Bouton1{/*Css relatif a tous les boutons de conexion*/
     position:relative;
     display: flex;
-    width: 50%;
+    width: 20%;
     min-height: 50px;
     padding: 5px;
     margin: auto;
