@@ -24,7 +24,7 @@
             }
             else{
                 ?>
-            <h1>Welcome ! Please login to continue</h1>
+            <h1>blablbla</h1>
             <a href="login_form.php" class="Bouton1">Login</a>
             <br><br>
             <?php
@@ -34,8 +34,9 @@
             <a href="game.php" class="Bouton1">Play as a guest (no data will be saved)</a>
         </main>
         
-        <footer>
+       
+    </body> 
+    <footer>
             <div>Project by : Yesi DUDON, Esteban HALLIEZ, Anthony LEJEUNE, Sasha LE-ROUX ZIELINSKI, Robin MATARESE, Cyriaque POTEL (CIR 1)</div>
         </footer>
-    </body>
 </html>
