@@ -24,6 +24,9 @@ footer{
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+.login{
+    float: left;
+}
 
 .Bouton1{/*Css relatif a tous les boutons de conexion*/
     position:relative;
