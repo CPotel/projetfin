@@ -8,6 +8,22 @@
     font-family: var(--main-font);
 }
 
+header {
+    text-align:center;
+    position: sticky;
+    display: inline;
+    height: 100%;
+    width: calc(100% - 30px);
+    top: 0;
+    z-index: 1000;
+    opacity: 0.8;
+    grid-area: header;
+    background-color: rgba(76, 30, 79, 0.9);
+    padding: 15px;
+    opacity: 1;
+    border-bottom: 2px solid white;
+  }
+
 body{
     width: 100%;
     margin: 0;
@@ -28,7 +44,8 @@ footer{
     display:flex;
     border: solid;
     width:60%;
-    margin: 90px;
+    left: 20% ;
+    flex-direction: row;
 }
 
 .Bouton1{/*Css relatif a tous les boutons de conexion*/
