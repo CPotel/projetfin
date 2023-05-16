@@ -13,7 +13,7 @@
 
         if($passwd == $verif_passwd){
             require("conn_bdd.php");
-            $reqSQL = "INSERT INTO users VALUES(id, ?, ?, 0)";
+            $reqSQL = "INSERT INTO users VALUES(id, ?, ?, 1)";
             $req = $conn->prepare($reqSQL);
             $req->prepare(array($name, $passwd));
             header("Location:game.php");
@@ -22,3 +22,4 @@
             echo"The passwords doesn't match, please try again."
         }
     }
+?>

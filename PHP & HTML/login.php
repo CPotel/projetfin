@@ -12,7 +12,7 @@
         
         require("conn_bdd.php");
 
-        $reqSQL = "SELECT name, passwd, last_lvl_reached FROM users where name = ? AND passwd = ?";
+        $reqSQL = "SELECT * FROM users where name = ? AND passwd = ?";
         $req = $conn->prepare($reqSQL);
         $req->execute(array($name, $passwd));
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -21,6 +21,8 @@
             
             $_SESSION["login"] = true;
             $_SESSION["last_lvl"] = $result[0]["last_lvl_reached"];
+            $_SESSION["name"] = $result[0]["name"];
+            $_SESSION["id"] = $result[0]["id"];
             header("Location:game.php");
         }
         else{

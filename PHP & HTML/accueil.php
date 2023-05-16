@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,6 +16,14 @@
         </header>
 
         <main>
+            <?php
+            if($_SESSION["login"]==true){
+                ?>
+            <a href="logout.php" class="Bouton1">Log out here</a>
+            <?php
+            }
+            else{
+                ?>
             <h1>Welcome ! Please login to continue</h1>
             <form method="post" action="login.php">
                 <label>Name :</label>
@@ -23,7 +34,11 @@
                 <br><br>
                 <input type="submit" name="submit" value="Log in" class="Bouton1">
             </form>
+            <?php
+            }
+            ?>
             <a href="form.php" class="Bouton1">No account? Sign in </a>
+            <a href="game.php" class="Bouton1">Play as a guest (no data will be saved)</a>
         </main>
         
         <footer>
