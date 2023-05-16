@@ -1,0 +1,33 @@
+﻿  test.cpp
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(4,2): error C2065: 'Tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(4,8): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'tuyau'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(4,8): error C2065: 'tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(4,14): error C3079: une liste d'initialiseurs ne peut pas être utilisée en tant qu'opérande droit de cet opérateur d'assignation
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(5,2): error C2065: 'tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(5,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(5,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(5,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [11], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(5,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(6,2): error C2065: 'tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(6,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(6,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(6,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [12], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(6,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(7,2): error C2065: 'tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(7,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(7,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(7,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [9], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(7,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(8,2): error C2065: 'tuyau' : identificateur non déclaré
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(8,2): error C2660: 'testing::internal::EqHelper<false>::Compare' : la fonction ne prend pas 3 arguments
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1481,26): message : voir la déclaration de 'testing::internal::EqHelper<false>::Compare'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\include\gtest\gtest.h(1468,26): message : est peut-être 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(8,2): message : 'testing::AssertionResult testing::internal::EqHelper<false>::Compare(const char *,const char *,const T1 &,const T2 &)' : attend des arguments 4 - 3 fournis.
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(8,2): message : lors de la tentative de mise en correspondance de la liste des arguments '(const char [11], const char [2], int)'
+C:\Users\Admin\Documents\GitHub\projetfin\test projet fin\test.cpp(8,2): error C2737: 'gtest_ar' : l’objet const doit être initialisé
