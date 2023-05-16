@@ -44,7 +44,8 @@ footer{
     display:flex;
     border: solid;
     width:60%;
-    left: 20% ;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
