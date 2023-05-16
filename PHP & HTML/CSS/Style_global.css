@@ -16,6 +16,15 @@ body{
     color: var(#F5F5DC);
 }
 
+footer{
+    background-color: var(--rose);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
 .Bouton1{/*Css relatif a tous les boutons de conexion*/
     position:relative;
     display: flex;
