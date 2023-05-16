@@ -15,3 +15,4 @@ if(isset($_SESSION["last_lvl"]) && isset($_SESSION["login"] && isset($_SESSION["
     session_destroy();
     header("Location:accueil.php");
 }
+?>
