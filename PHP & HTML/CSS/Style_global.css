@@ -24,8 +24,9 @@ footer{
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
-.login{
-    float: left;
+.boite{
+    display:flex
+    
 }
 
 .Bouton1{/*Css relatif a tous les boutons de conexion*/
