@@ -6,7 +6,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <link href = "CSS/home.css" rel="stylesheet">
+        <link href = "CSS/aceuil.css" rel="stylesheet">
         <link href = "CSS/Style_global.css" rel="stylesheet">
         <title>Home</title>
     </head>
