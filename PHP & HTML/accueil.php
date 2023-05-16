@@ -29,7 +29,7 @@
                 <?php
                 if (isset($_SESSION["login"])){
                     ?>
-                <a href="logout.php" class="logout">Log out here</a>
+                <a href="logout.php" class="Bouton1" class="logout">Log out here</a>
                 <?php
                 }
                 else{
@@ -40,8 +40,8 @@
                 <?php
                 }
                 ?>
-                <a href="form.php" class="Bouton1">No account? Sign in </a>
-                <a href="game.php" class="Bouton1">Play as a guest (no data will be saved)</a>
+                <a href="form.php" class="Bouton2">No account? Sign in </a>
+                <a href="game.php" class="Bouton3">Play as a guest (no data will be saved)</a>
             <div>
         </main>
         
