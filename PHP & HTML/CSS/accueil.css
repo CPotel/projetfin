@@ -1,5 +1,5 @@
 body {
-    background-color:black;
+    background-color:#4C1E4F;
     font-family: "Exo 2", sans-serif;
     font-size: 10px;
     overflow-x: hidden;
@@ -9,7 +9,7 @@ body {
       "accueil"
       "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 30px 100vh 100px;
+    grid-template-rows: 30px 100vh 250px;
   }
 header {
   text-align:center;

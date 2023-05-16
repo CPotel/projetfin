@@ -60,19 +60,19 @@ h1 {
 #logo {
     position: absolute;
     left: 10px;
-}
+  }
   
-h1 {
+  h1 {
     left: 50px;
     font-size: 19px;
-}
+  }
   
-#logo {
+  #logo {
     top: 4px;
     height: 50px;
     width: 50px;
-}
-
+  }
+  
 footer{
     background-color: var(--rose);
     display: flex;
