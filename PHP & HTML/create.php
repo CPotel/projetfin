@@ -2,14 +2,14 @@
     session_start();
     function valider_donnees($data){
         $data = trim($data);
-        $data = stripslashe($data);
+        $data = stripslashes($data);
         $data = htmlspecialchars($data);
         return $data;
     }
     if(isset($_POST["create"])){
         $name = valider_donnees($_POST["name"]);
-        $passwd = valider_donnes($_POST["passwd"]);
-        $verif_passwd = valider_donnes($_POST["verifpass"]);
+        $passwd = valider_donnees($_POST["passwd"]);
+        $verif_passwd = valider_donnees($_POST["verifpass"]);
 
         if($passwd == $verif_passwd){
             require("conn_bdd.php");

@@ -2,7 +2,7 @@
     session_start();
     function valider_donnees($data){
         $data = trim($data);
-        $data = stripslashe($data);
+        $data = stripslashes($data);
         $data = htmlspecialchars($data);
         return $data;
     }
