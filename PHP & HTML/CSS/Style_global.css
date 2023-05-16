@@ -1,9 +1,9 @@
 *{
-    --orange: #FF7D00; /*Variables générales pour le site*/
-    --sienna: #78290f;
-    --beige: #FFECD1;
-    --bleuclair: #15616D;
-    --bleufonce: #001524;
+    --rose: #A790A5; /*Variables générales pour le site*/
+    --cerulean: #40798C;
+    --verdigris: #70A9A1;
+    --vertclair: #9EC1A3;
+    --palatinate: #4C1E4F;
     --main-font: "Josefin Sans",sans-serif;
     font-family: var(--main-font);
 }
@@ -12,10 +12,10 @@
     position:relative;
     display: flex;
     width: 20%;
-    min-height: 50px;
+    min-height: 30px;
     padding: 5px;
     margin: auto;
-    background-color: var(--sienna);
+    background-color: var(--verdigris);
     color: black;
     justify-content: center;
     align-items: center;
@@ -25,13 +25,13 @@
     transition: 0.5s;
     text-decoration: none;
     text-align: center;
-    border: solid var(--sienna);
+    border: solid var(--verdigris);
 }
 
 .Bouton1:hover{
     position:relative;
-    background-color: var(--beige);
-    border: solid var(--beige);
+    background-color: var(--vertclair);
+    border: solid var(--vertclair);
     color: var(black);
     transition: 0.5s;
 }
