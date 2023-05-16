@@ -119,3 +119,74 @@ ul li {
   background-color: rgba(180, 20, 20, 0.8);
   border-radius: 2px 20px 2px 20px;
 }
+
+footer {
+    border-top:2px solid white;
+    background-color: #4C1E4F;
+    grid-area: footer;
+    color: white;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0.5px;
+    border-style: solid;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+  
+footer div h2 {
+    margin-top:30px;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 5%;
+}
+  
+footer img {
+    margin-left: 18px;
+}
+  
+footer a,
+footer .contacter p {
+    color: #f7f2f3;
+    text-decoration: None;
+    font-family: sans-serif;
+    font-style: italic;
+}
+  
+.reseaux ul,
+.contacter ul,
+.legal ul {
+    list-style-type: none;
+}
+  
+#logo2,
+#logo3,
+#logo4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+}
+  
+.insta:hover,
+.youtube:hover,
+.twitter:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+footer div h2 {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+  
+footer a,
+footer .contacter p {
+    font-size: 12px;
+    line-height: 40px;
+}
