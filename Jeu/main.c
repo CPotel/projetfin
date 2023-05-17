@@ -1,191 +1,86 @@
 #include "plomber.h"
+int main() {
+    srand(time(NULL));
+    int k = 0;
+    Game testgame;
+    testgame.size = 2;
+    testgame.beginning = NULL;
+    testgame.end = NULL;
 
-//Création d'un tuyau
+    Pipe* pipe1 = (Pipe*)malloc(sizeof(Pipe));
+    pipe1->direction[UP] = 0;
+    // Initialisation des autres membres de pipe1
+    pipe1->direction[DOWN] = 1;
+    pipe1->direction[LEFT] = 0;
+    pipe1->direction[RIGHT] = 0;
+    pipe1->x = 0;
+    pipe1->y = 0;
+    pipe1->previous[UP] = NULL;
+    pipe1->previous[DOWN] = NULL;
+    pipe1->previous[LEFT] = NULL;
+    pipe1->previous[RIGHT] = NULL;
 
-Pipe* InitPipe() {
-	Pipe* NewPipe;
-	NewPipe = (Pipe*)malloc(sizeof(Pipe)); //Allocation de mémoire
-	if (NewPipe != NULL && NewPipe->direction != NULL) {
-		int count = 0;
-		while (count < 2) { //Tant que le tuyau n'est pas valide, on en regénère un nouveau
-			count = 0;
-			NewPipe->direction[0] = rand() % 2; //Initialisation des sorties du tuyau
-			NewPipe->direction[1] = rand() % 2; //Si 1 alors sortie, si 0 pas de sortie
-			NewPipe->direction[2] = rand() % 2;
-			NewPipe->direction[3] = rand() % 2;
-			if (NewPipe->direction[0] == 1) count++;
-			if (NewPipe->direction[1] == 1) count++;
-			if (NewPipe->direction[2] == 1) count++;
-			if (NewPipe->direction[3] == 1) count++;
-		}
-	}
-	return NewPipe;
-}
+    Pipe* pipe2 = (Pipe*)malloc(sizeof(Pipe));
+    pipe2->direction[UP] = 1;
+    // Initialisation des autres membres de pipe2
+    pipe2->direction[DOWN] = 0;
+    pipe2->direction[LEFT] = 0;
+    pipe2->direction[RIGHT] = 1;
+    pipe2->x = 0;
+    pipe2->y = 1;
+    pipe2->previous[UP] = pipe1;
+    pipe2->previous[DOWN] = NULL;
+    pipe2->previous[LEFT] = NULL;
+    pipe2->previous[RIGHT] = NULL;
 
-Game InitGame() {
-	Game game;
-#ifdef easy
-	//Création du niveau
-	for (int i = 0; i < 8; i++) { //Grille de 8x8
-		for (int j = 0; j < 8; j++) {
-			game.tab[i][j] = InitPipe();
-			game.tab[i][j]->x = i;
-			game.tab[i][j]->y = j;
-		}
-	}
-	game.size = 64;
 
-	//Création du début du niveau
-	game.beginning_x = rand() % 8; //On crée la position en x de l'entrée
-	if (game.beginning_x != 0 && game.beginning_ != 7) { //Si cette entrée n'est pas au bord de la grille selon x, sa position y doit l'être
-		int temp = rand() % 2;
-		if (temp == 0) game.beginning_y = 0;
-		else game.beginning_y = 7;
-	}
-	else game.beginning_y = rand() % 8;
+    Pipe* pipe3 = (Pipe*)malloc(sizeof(Pipe));
+    pipe3->direction[UP] = 1;
+    // Initialisation des autres membres de pipe3
+    pipe3->direction[DOWN] = 0;
+    pipe3->direction[LEFT] = 1;
+    pipe3->direction[RIGHT] = 0;
+    pipe3->x = 1;
+    pipe3->y = 1;
+    pipe3->previous[UP] = NULL;
+    pipe3->previous[DOWN] = NULL;
+    pipe3->previous[LEFT] = pipe2;
+    pipe3->previous[RIGHT] = NULL;
 
-	//Création Fin du niveau
-	game.end_x = rand() % 8; //On crée la position en x de la sortie
-	if (game.end_x != 0 && game.end_x != 7) { //Si cette sortie n'est pas au bord de la grille selon x, sa position y doit l'être
-		int temp = rand() % 2;
-		if (temp == 0) game.end_y = 0;
-		else game.end_y = 7;
-	}
-	else game.end_y = rand() % 8;
-	while ((game.end_y == game.beginning_y) && (game.end_x == game.beginning_x)) InitGame();
+    Pipe* pipe4 = (Pipe*)malloc(sizeof(Pipe));
+    pipe4->direction[UP] = 0;
+    // Initialisation des autres membres de pipe4
+    pipe4->direction[DOWN] = 1;
+    pipe4->direction[LEFT] = 0;
+    pipe4->direction[RIGHT] = 0;
+    pipe4->x = 1;
+    pipe4->y = 0;
+    pipe4->previous[UP] = NULL;
+    pipe4->previous[DOWN] = pipe3;
+    pipe4->previous[LEFT] = NULL;
+    pipe4->previous[RIGHT] = NULL;
+    // Assignation des pointeurs dans testgame.tab
+    testgame.tab[0][0] = pipe1;
+    testgame.tab[0][1] = pipe2;
+    testgame.tab[1][1] = pipe3;
+    testgame.tab[1][0] = pipe4;
 
-	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 8; j++) {
-			if ((game.tab[i][j]->x = game.beginning_x) && (game.tab[i][j]->y = game.beginning_y)) { //On repère le tuyau de départ dans son code propre 
-				game.tab[i][j]->start = 1;
-				game.tab[i][j]->end = 0;
-			}
-			if ((game.tab[i][j]->x = game.end_x) && (game.tab[i][j]->y = game.end_y)) { //On repère le tuyau de fin dans son code propre 
-				game.tab[i][j]->start = 0;
-				game.tab[i][j]->end = 1;
-			}
-			else {
-				game.tab[i][j]->start = 0;
-				game.tab[i][j]->end = 0;
-			}
-		}
-	}
+    // Assignation des pointeurs beginning et end dans testgame
+    testgame.beginning = pipe1;
+    testgame.end = pipe4;
 
-	return game;
-}
-#endif
-#ifdef intermediate
-//Création du niveau
-for (int i = 0; i < 15; i++) {
-	for (int j = 0; j < 15; j++) {
-		game.tab[i][j] = InitPipe();
-		game.tab[i][j]->x = i;
-		game.tab[i][j]->y = j;
-	}
-}
+    if (solveGame(&testgame)) {
+        printf("Le jeu a été résolu avec succès!\n");
+    }
+    else {
+        printf("Aucune solution trouvée pour le jeu.\n");
+    }
 
-//Création du début du niveau
-game.beginning_x = rand() % 15; //On crée la position en x de l'entrée
-if (game.beginning_x != 0 && game.beginning_x != 14) { //Si cette entrée n'est pas au bord de la grille selon x, sa position y doit l'être
-	int temp = rand() % 2;
-	if (temp == 0) game.beginning_y = 0;
-	else game.beginning_y = 14;
-}
-else game.beginning_y = rand() % 15;
+    // Libération de la mémoire
+    free(pipe1);
+    free(pipe2);
+    free(pipe3);
+    free(pipe4);
 
-//Création Fin du niveau
-game.end_x = rand() % 15;//On crée la position en x de la sortie
-if (game.end_x != 0 && game.end_x != 14) { //Si cette sortie n'est pas au bord de la grille selon x, sa position y doit l'être
-	int temp = rand() % 2;
-	if (temp == 0) game.end_y = 0;
-	else game.end_y = 14;
-}
-else game.end_y = rand() % 15;
-while ((game.end_y == game.beginning_y) && (game.end_x == game.beginning_x)) InitGame();
-
-for (int i = 0; i < 15; i++) {
-	for (int j = 0; j < 15; j++) {
-		if ((game.tab[i][j]->x = game.beginning_x) && (game.tab[i][j]->y = game.beginning_y)) { //On repère le tuyau de départ dans son code propre 
-			game.tab[i][j]->start = 1;
-			game.tab[i][j]->end = 0;
-		}
-		if ((game.tab[i][j]->x = game.end_x) && (game.tab[i][j]->y = game.end_y)) { //On repère le tuyau de fin dans son code propre 
-			game.tab[i][j]->start = 0;
-			game.tab[i][j]->end = 1;
-		}
-		else {
-			game.tab[i][j]->start = 0;
-			game.tab[i][j]->end = 0;
-		}
-	}
-}
-
-return game;
-}
-#endif
-
-#ifdef hard
-
-//Création du niveau
-for (int i = 0; i < 20; i++) {
-	for (int j = 0; j < 20; j++) {
-		game.tab[i][j] = InitPipe();
-		game.tab[i][j]->x = i;
-		game.tab[i][j]->y = j;
-
-	}
-}
-
-//Création début du niveau
-game.beginning_x = rand() % 20; //On crée la position en x de l'entrée
-if (game.beginning_x != 0 && game.beginning_x != 19) { //Si cette entrée n'est pas au bord de la grille selon x, sa position y doit l'être
-	int temp = rand() % 2;
-	if (temp == 0) game.beginning_y = 0;
-	else game.beginning_y = 19;
-}
-else game.beginning_y = rand() % 20;
-
-//Création Fin du niveau
-game.end_x = rand() % 20; //On crée la position en x de la sortie
-if (game.end_x != 0 && game.end_x != 19) { //Si cette sortie n'est pas au bord de la grille selon x, sa position y doit l'être
-	int temp = rand() % 2;
-	if (temp == 0) game.end_y = 0;
-	else game.end_y = 19;
-}
-else game.end_y = rand() % 20;
-while ((game.end_y == game.beginning_y) && (game.end_x == game.beginning_x)) InitGame();
-
-for (int i = 0; i < 20; i++) {
-	for (int j = 0; j < 20; j++) {
-		if ((game.tab[i][j]->x = game.beginning_x) && (game.tab[i][j]->y = game.beginning_y)) { //On repère le tuyau de départ dans son code propre 
-			game.tab[i][j]->start = 1;
-			game.tab[i][j]->end = 0;
-		}
-		if ((game.tab[i][j]->x = game.end_x) && (game.tab[i][j]->y = game.end_y)) { //On repère le tuyau de fin dans son code propre 
-			game.tab[i][j]->start = 0;
-			game.tab[i][j]->end = 1;
-		}
-		else {
-			game.tab[i][j]->start = 0;
-			game.tab[i][j]->end = 0;
-		}
-	}
-}
-
-return game;
-}
-#endif
-
-void main() {
-	srand(time(NULL));
-	//TESTS
-	Pipe* test = InitPipe();
-	printf("Right is %d", test->direction[1]);
-	printf("Left is %d", test->direction[3]);
-	printf("Up is %d", test->direction[0]);
-	printf("Down is %d\n", test->direction[2]);
-	Game game_test = InitGame();
-	printf("Les coordonnées du tuyau d'entrée sont [%d,%d]\n", game_test.beginning_x, game_test.beginning_y);
-	printf("Les coordonnées du tuyau d'entrée sont [%d,%d]\n", game_test.end_x, game_test.end_y);
-	//FIN TESTS
+    return 0;
 }
