@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Jeu/.vs/Jeu/v17/Browse.VC.db
+/Jeu/.vs/Jeu/v17/Solution.VC.db
+/Jeu/.vs/Jeu/v17/.suo
+/.vs/VSWorkspaceState.json

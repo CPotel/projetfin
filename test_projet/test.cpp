@@ -8,6 +8,7 @@ extern "C" {
 TEST(turn, turn) {
 
 	Pipe myPipe;
+	//pipe.direction = { 1, 0, 1, 0 };
 	myPipe.direction[0] = 1;
 	myPipe.direction[0] = 1;
 	myPipe.direction[1] = 0;
@@ -24,4 +25,3 @@ TEST(turn, turn) {
 	EXPECT_EQ(myPipe.direction[2], 0);
 	EXPECT_EQ(myPipe.direction[3], 1);
 }
-

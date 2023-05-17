@@ -1,0 +1,103 @@
+*{
+    --rose: #A790A5; /*Variables générales pour le site*/
+    --cerulean: #40798C;
+    --verdigris: #70A9A1;
+    --vertclair: #9EC1A3;
+    --palatinate: #4C1E4F;
+    --main-font: "Josefin Sans",sans-serif;
+    font-family: var(--main-font);
+}
+
+.boite{
+    display:flex;
+    border: solid;
+    position:center;
+    width:90%;
+    left: 50;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Bouton1{/*Css relatif a tous les boutons de conexion*/
+    position:relative;
+    display: flex;
+    width: 20%;
+    min-height: 30px;
+    padding: 5px;
+    margin: auto;
+    background-color: var(--verdigris);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    border: solid var(--verdigris);
+}
+
+.Bouton1:hover{
+    position:relative;
+    background-color: var(--vertclair);
+    border: solid var(--vertclair);
+    color: var(black);
+    transition: 0.5s;
+}
+.Bouton2{/*Css relatif a tous les boutons de conexion*/
+    position:relative;
+    display: flex;
+    width: 20%;
+    min-height: 30px;
+    padding: 5px;
+    margin: auto;
+    background-color: var(--verdigris);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    border: solid var(--verdigris);
+}
+
+.Bouton2:hover{
+    position:relative;
+    background-color: var(--vertclair);
+    border: solid var(--vertclair);
+    color: var(black);
+    transition: 0.5s;
+}
+
+.Bouton3{/*Css relatif a tous les boutons de conexion*/
+    position:relative;
+    display: flex;
+    width: 20%;
+    min-height: 30px;
+    padding: 5px;
+    margin: auto;
+    background-color: var(--verdigris);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    border: solid var(--verdigris);
+}
+
+.Bouton3:hover{
+    position:relative;
+    background-color: var(--vertclair);
+    border: solid var(--vertclair);
+    color: var(black);
+    transition: 0.5s;
+}
