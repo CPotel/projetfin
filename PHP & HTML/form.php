@@ -5,7 +5,7 @@
         <title>Create account</title>
         <link href = "CSS/log.css" rel="stylesheet">
     </head>
-    
+    <script href="header.js" defer></script>
     <body>
     <header>
     <nav>

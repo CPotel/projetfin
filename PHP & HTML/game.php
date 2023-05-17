@@ -13,7 +13,7 @@
                 <li><a class="accueil" href="index.php">HOME</a></li>
                 <li><a class="score" href="score.php">SCORE</a></li>
                 <li><a class="theme" href="theme.php">THEME</a> </li>
-                <li><a class="login" href="login.html">MY ACCOUNT</a></li>
+                <li><a class="login" href="login_form.php">MY ACCOUNT</a></li>
                 <li><a class="who" href="who.html">ABOUT US</a></li>
             </ul>
         </nav>  
