@@ -11,21 +11,6 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 30px 100vh 250px;
   }
-header {
-  text-align:center;
-  position: sticky;
-  display: inline;
-  height: 100%;
-  width: calc(100% - 30px);
-  top: 0;
-  z-index: 1000;
-  opacity: 0.8;
-  grid-area: header;
-  background-color: rgba(76, 30, 79, 0.9);
-  padding: 15px;
-  opacity: 1;
-  border-bottom: 2px solid white;
-}
 
 main {
   margin-top:30px;
@@ -116,7 +101,8 @@ ul li {
 .who:hover,
 .login:hover {
   cursor: pointer;
-  background-color: rgba(180, 20, 20, 0.8);
+  color:black;
+  background-color: white;
   border-radius: 2px 20px 2px 20px;
 }
 

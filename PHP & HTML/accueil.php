@@ -6,7 +6,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <link href = "CSS/aceuil.css" rel="stylesheet">
+        <link href = "CSS/accueil.css" rel="stylesheet">
         <link href = "CSS/Style_global.css" rel="stylesheet">
         <title>Home</title>
     </head>
@@ -15,10 +15,10 @@
         <header>
         <nav>
             <ul>
-                <li><a class="accueil" href="index.php">HOME</a></li>
+                <li><a class="accueil" href="accueil.php">HOME</a></li>
                 <li><a class="score" href="score.php">SCORE</a></li>
                 <li><a class="theme" href="theme.php">THEME</a> </li>
-                <li><a class="login" href="login.html">MY ACCOUNT</a></li>
+                <li><a class="login" href="login.php">MY ACCOUNT</a></li>
                 <li><a class="who" href="who.html">ABOUT US</a></li>
             </ul>
         </nav>  
