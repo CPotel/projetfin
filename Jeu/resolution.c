@@ -2,21 +2,26 @@
 
 bool isConnected(int side, Pipe* tuyau,Pipe* tab[])
 {
-	switch (side)
-	{
-		case RIGHT:
-			if (tuyau->direction[3] == 0 || tab[tuyau->x + 1][tuyau->y].direction[3] == 1)	return true;
-			break;
-		case LEFT:
-			if (tuyau->direction[1] == 0 || tab[tuyau->x - 1][tuyau->y].direction[1] == 1)	return true;
-			break;
-		case UP:
-			if (tuyau->direction[0] == 0 || tab[tuyau->x][tuyau->y + 1].direction[2] == 1)	return true;
-			break;
-		case DOWN:
-			if ((tuyau->direction[2] == 0 || tab[tuyau->x][tuyau->y - 1].direction[0] == 1))	return true;
-			break;
-	}
+    switch (side)
+    {
+    case RIGHT:
+        if (tuyau->x < SIZE - 1 && (tuyau->direction[RIGHT] == 0 || tab[tuyau->x - 1][tuyau->y].direction[LEFT] == 1))
+            return true;
+        break;
+    case LEFT:
+        if (tuyau->x >= 0 && (tuyau->direction[LEFT] == 0 || tab[tuyau->x + 1][tuyau->y].direction[RIGHT] == 1))
+            return true;
+        break;
+    case UP:
+        if (tuyau->y < SIZE - 1 && (tuyau->direction[UP] == 0 || tab[tuyau->x][tuyau->y - 1].direction[DOWN] == 1))
+            return true;
+        break;
+    case DOWN:
+        if (tuyau->y >= 0 && (tuyau->direction[DOWN] == 0 || tab[tuyau->x][tuyau->y + 1].direction[UP] == 1))
+            return true;
+        break;
+    }
+
 	return false;
 }
 
@@ -24,8 +29,6 @@ bool isAtValidPlace(Pipe tuyau, Pipe* tab[]) {
 	if (isConnected(RIGHT, &tuyau, tab) && isConnected(LEFT, &tuyau, tab) && isConnected(UP, &tuyau, tab) && isConnected(DOWN, &tuyau, tab)) return true;
 	return false;
 }
-
-//bool isNextTo(Pipe tuyauA, Pipe tuyauB){''
 
 
 bool isGameEnd(Pipe* tab[]) {
@@ -37,13 +40,39 @@ bool isGameEnd(Pipe* tab[]) {
 	return true;
 }
 
-/*void solution(Pipe* tab[], Pipe first) {
-	while (!isGameEnd) {
-		int turnTry = 0;
-		while (!isAtValidPlace(first, tab) {
-			turn(&first);
+bool solveGameDFS(Pipe* current, Pipe* tab[]) {
+    int i = 0;
+    if (isGameEnd(tab)) {
+        // Le jeu est terminé, une solution a été trouvée
+        return true;
+    }
 
-		}
-	}
+    // Parcours de toutes les directions possibles
+    for (int i = 0; i < 4; i++) {
+        if (current->direction[i] && current->previous[i] == NULL) {
+            // Si le tuyau est ouvert dans cette direction et le chemin précédent est libre
+            Pipe* next = &tab[current->x][current->y];
+            if (isConnected(i, next, tab)) {
+                // Si le tuyau suivant est connecté
+                current->previous[i] = next;
+                next->previous[(i + 2) % 4] = current;
+
+                // Appel récursif pour continuer l'exploration
+                if (solveGameDFS(next, tab)) {
+                    return true;
+                }
+
+                // Si la solution n'a pas été trouvée, réinitialise les chemins précédents
+                current->previous[i] = NULL;
+                next->previous[(i + 2) % 4] = NULL;
+            }
+        }
+    }
+
+    return false;
 }
-*/
+
+bool solveGame(Game* game) {
+    // Appelle l'algorithme de résolution en profondeur (DFS)
+    return solveGameDFS(game->beginning, game->tab);
+}

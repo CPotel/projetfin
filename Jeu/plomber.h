@@ -7,11 +7,14 @@
 #include <locale.h>
 #include <stdbool.h>
 #define RIGHT 1
-#define UP 2
+#define UP 0
 #define LEFT 3
-#define DOWN 4
+#define DOWN 2
 #define SIZE 8
-#define easy
+#define test 2
+// #define intermediate 15
+// #define hard 20
+#define SIZE 8
 
 /*-------------------------------------------------------------------------------------------*/
 /*----------------------------------Définition des types-------------------------------------*/
@@ -26,6 +29,9 @@ typedef struct pipe {
 
 typedef struct game {
     int size; //Taille de la grille de niveau
+#ifdef test
+    struct pipe* tab[2][2];
+#endif
 #ifdef easy
     struct pipe* tab[8][8];
 #endif
@@ -48,8 +54,10 @@ typedef struct game {
 
 void turn(Pipe* t);
 //void solution(Pipe* tab[], Pipe first);
-bool isConnected(int side, Pipe* tuyau);
+bool isConnected(int side, Pipe* tuyau,Pipe* tab[]);
 bool isAtValidPlace(Pipe tuyau, Pipe* tab[]);
 bool isGameEnd(Pipe* tab[]);
 Pipe* InitPipe();
 Game InitGame();
+bool solveGame(Game* game);
+bool solveGameDFS(Pipe* current, Pipe* tab[]);

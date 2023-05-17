@@ -15,6 +15,7 @@
     <header>
     <nav>
             <ul>
+                <a href="game.php"><img id="logo" src="pictures/logo.png" alt="Logo"></a>
                 <li><a class="accueil" href="accueil.php">HOME</a></li>
                 <li><a class="score" href="scores.php">SCORE</a></li>
                 <li><a class="theme" href="theme.php">THEME</a> </li>
@@ -52,7 +53,7 @@
             <h2>Contact us</h2>
             <ul>
                 <li><p>E-mail :  Ferrari.corp@gmail.com</p></li>
-                <li><p>phone number : 0650184350</p></li>
+                <li><p>phone number : 0695966447    </p></li>
                 <li><a href="contact.html">Contact form</a></li>
             </ul>
         </div>

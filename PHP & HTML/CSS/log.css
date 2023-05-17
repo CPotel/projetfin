@@ -128,17 +128,14 @@ footer .contacter p {
   line-height: 40px;
 }
 
-#logo {
-  position: absolute;
-  left: 10px;
-}
-
-#logo {
-  top: 4px;
+#logo{
+  position:absolute;
+  z-index:101;
   height: 50px;
   width: 50px;
+  top:5px;
+  left:5px;
 }
-
 
 header nav{
   position: relative;
@@ -208,4 +205,3 @@ header ul li {
 .link{
   color:red;
 }
-B
