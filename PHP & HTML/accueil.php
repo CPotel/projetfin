@@ -10,7 +10,7 @@
         <link href = "CSS/Style_global.css" rel="stylesheet">
         <title>Home</title>
     </head>
-
+    <script href="header.js" defer></script>
     <body>
         <header>
         <nav>

@@ -10,7 +10,7 @@
     <link href = "CSS/log.css" rel="stylesheet">
     <title>Connect</title>
 </head>
-
+<script href="header.js" defer></script>
 <body>
     <header>
     <nav>

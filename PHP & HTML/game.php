@@ -5,6 +5,7 @@
         <link href="CSS/game.css" rel="stylesheet">
         <title>IDROLICO</title>
     </head>
+    <script href="header.js" defer></script>
     <body>
         <header>
         <nav>
