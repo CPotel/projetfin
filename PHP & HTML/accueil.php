@@ -10,7 +10,7 @@
         <link href = "CSS/Style_global.css" rel="stylesheet">
         <title>Home</title>
     </head>
-
+    <script href="header.js" defer></script>
     <body>
         <header>
         <nav>
@@ -18,7 +18,7 @@
                 <li><a class="accueil" href="accueil.php">HOME</a></li>
                 <li><a class="score" href="score.php">SCORE</a></li>
                 <li><a class="theme" href="theme.php">THEME</a> </li>
-                <li><a class="login" href="login.php">MY ACCOUNT</a></li>
+                <li><a class="login" href="login_form.php">MY ACCOUNT</a></li>
                 <li><a class="who" href="who.html">ABOUT US</a></li>
             </ul>
         </nav>  

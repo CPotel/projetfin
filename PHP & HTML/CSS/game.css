@@ -19,14 +19,12 @@ body {
   }
 
 header {
-  text-align:center;
   position: sticky;
   display: inline;
   height: 100%;
   width: calc(100% - 30px);
   top: 0;
-  z-index: 1000;
-  opacity: 0.8;
+  z-index: 100;
   grid-area: header;
   background-color: rgba(76, 30, 79, 0.9);
   padding: 15px;
@@ -39,50 +37,26 @@ main {
   grid-area: accueil;
 }
 
-h1 {
-  position: relative;
-  display: inline;
-  top: 4px;
-  font-family: georgia;
-  font-weight: bold;
-  color: white;
-}
-  
-#logo {
-  position: absolute;
-  left: 10px;
+header>a{
+  position:absolute;
+  height:25px;
+  width:200px;
+  left:20px;
+  top:20px;
+  color:white;
+  z-index:1000;
 }
 
-h1 {
-  left: 50px;
-  font-size: 19px;
-}
-
-#logo {
-  top: 4px;
-  height: 50px;
-  width: 50px;
-}
-
-header {
-  position: sticky;
-  display: inline;
-  height: 100%;
-  width: calc(100% - 30px);
-  top: 0;
-  z-index: 1000;
-  opacity: 0.8;
-  grid-area: header;
-  background-color: rgba(76, 30, 79, 0.9);
-  padding: 15px;
-  opacity: 1;
-  border-bottom: 2px solid white;
+#Titre{
+  height:100%;
+  width:100%;
 }
 
 header nav{
+  display: block;
+  text-align:center;
   position: relative;
-  display: inline;
-  bottom: -5px;
+  bottom: -8px;
 }
 
 .accueil,
@@ -99,7 +73,7 @@ header nav{
   transition-duration: 0.3s;
   transition-timing-function: linear;
   font-size: 13px;
-  }
+  } 
 
 header ul {
   display: inline;

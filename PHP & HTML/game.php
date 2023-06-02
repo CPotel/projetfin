@@ -7,15 +7,19 @@
     </head>
     <body>
         <header>
-        <nav>
-            <ul>
-                <li><a class="accueil" href="index.php">HOME</a></li>
-                <li><a class="score" href="score.php">SCORE</a></li>
-                <li><a class="theme" href="theme.php">THEME</a> </li>
-                <li><a class="login" href="login.html">MY ACCOUNT</a></li>
-                <li><a class="who" href="who.html">ABOUT US</a></li>
-            </ul>
-        </nav>  
+            <a href="game.php"><img id="Titre" src="pictures/maynekraft_2.0.png" alt="Titre"></a>
+            
+            <div id="nav">
+            <nav>
+                <ul>
+                    <li><a class="accueil" href="accueil.php">HOME</a></li>
+                    <li><a class="score" href="score.php">SCORE</a></li>
+                    <li><a class="theme" href="theme.php">THEME</a> </li>
+                    <li><a class="login" href="login.php">MY ACCOUNT</a></li>
+                    <li><a class="who" href="who.html">ABOUT US</a></li>
+                </ul>
+            </nav>  
+            </div>
         </header>
         <main>
             <div class="game">
